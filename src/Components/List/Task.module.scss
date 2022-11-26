@@ -19,6 +19,10 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+  .title {
+    text-decoration: line-through;
+    color: $gray-300;
+  }
   .check {
     color: $purple-300;
   }

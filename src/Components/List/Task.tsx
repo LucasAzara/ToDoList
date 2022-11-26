@@ -25,7 +25,7 @@ export function Task({ id, isChecked, title, deleteList, checkList }: ITask) {
       ) : (
         <Circle className={style.uncheck} onClick={checkTask} />
       )}
-      <p>{title}</p>
+      <p className={isChecked ? style.title : ""}>{title}</p>
       <Trash className={style.trash} onClick={deleteTask} />
     </li>
   );
