@@ -1,0 +1,53 @@
+@import "../../global.scss";
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+
+  p {
+    display: flex;
+    gap: 8px;
+
+    font-weight: 700;
+  }
+
+  span {
+    color: $gray-200;
+
+    font-size: 0.75rem;
+
+    background-color: $gray-400;
+    border-radius: 999px;
+    padding: 2px 8px;
+  }
+
+  .created {
+    color: $blue-300;
+  }
+  .completed {
+    color: $purple-300;
+  }
+}
+
+.list {
+  border-top: 1px solid $gray-400;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+
+  .emptyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 1rem;
+
+    p {
+      color: $gray-300;
+      &:first-child {
+        font-weight: 700;
+      }
+    }
+  }
+}

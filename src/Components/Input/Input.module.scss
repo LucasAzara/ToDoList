@@ -1,0 +1,43 @@
+@import "../../global.scss";
+
+.formTask {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -1.5rem;
+
+  .inputTask {
+    flex-grow: 1;
+
+    background-color: $gray-500;
+    color: $gray-300;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid $gray-700;
+
+    &:focus-visible {
+      outline: 2px solid $blue-300;
+    }
+  }
+  .submitTask {
+    flex-basis: 5.625rem;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    background-color: $blue-500;
+    border: unset;
+    color: $gray-100;
+    border-radius: 0.5rem;
+    font-weight: 700;
+
+    &:disabled {
+      filter: brightness(0.8);
+      cursor: not-allowed;
+    }
+  }
+}
